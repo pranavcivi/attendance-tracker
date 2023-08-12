@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <AnchorPane fx:id="Nbox" prefHeight="878.0" prefWidth="896.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="load_log_AL" layoutX="52.0" layoutY="67.0" mnemonicParsing="false" onAction="#load_log_AL_listener" prefHeight="25.0" prefWidth="98.0" text="A-load-log-AL" />
+            <TextArea fx:id="textArea" layoutX="470.0" layoutY="160.0" prefHeight="604.0" prefWidth="405.0" text="empty" />
+            <Button fx:id="print_collection_AL" layoutX="46.0" layoutY="110.0" mnemonicParsing="false" onAction="#print_collection_AL_listener" text="B-print-collection-AL" />
+            <Button fx:id="print_count_AL" layoutX="48.0" layoutY="160.0" mnemonicParsing="false" onAction="#print_count_AL_listener" text="C-print-count-AL" />
+            <Button fx:id="load_log_SR" layoutX="55.0" layoutY="205.0" mnemonicParsing="false" onAction="#load_log_SR_listener" text="D-load-log-SR" />
+            <Button fx:id="print_collection_SR" layoutX="38.0" layoutY="245.0" mnemonicParsing="false" onAction="#print_collection_SR_listener" text="E-print-collection-SR" />
+            <Button fx:id="print_count_SR" layoutX="46.0" layoutY="292.0" mnemonicParsing="false" onAction="#print_count_SR" text="F-print-count-SR" />
+            <Button fx:id="list_students_not_in_class" layoutX="29.0" layoutY="337.0" mnemonicParsing="false" onAction="#list_students_not_in_class_listener" text="G-list-students-not-in-class" />
+            <Button fx:id="list_all_times_checking_in_and_out" layoutX="14.0" layoutY="385.0" mnemonicParsing="false" onAction="#list_all_times_checking_in_and_out_listener" text="H-list-all-times-checking-in-and-out" />
+            <Button fx:id="list_all_times_checked_in" layoutX="26.0" layoutY="439.0" mnemonicParsing="false" onAction="#list_all_times_checked_in_listener" text="I-list-all-times-checked-in" />
+            <Button fx:id="list_students_late_to_class" layoutX="19.0" layoutY="489.0" mnemonicParsing="false" onAction="#list_students_late_to_class_listener" text="J-list-students-late-to-class" />
+            <Button fx:id="get_first_student_to_enter" layoutX="28.0" layoutY="535.0" mnemonicParsing="false" onAction="#get_first_student_to_enter_listener" text="K-get-first-student-to-enter" />
+            <Button fx:id="print_attendance_data_for_student" layoutX="14.0" layoutY="579.0" mnemonicParsing="false" onAction="#print_attendance_date_for_student_listener" text="L-print-attendance-date-for-student" />
+            <Button fx:id="is_present" layoutX="59.0" layoutY="626.0" mnemonicParsing="false" onAction="#is_present_listener" text="M-is-present" />
+            <Button fx:id="list_all_students_checked_in" layoutX="22.0" layoutY="672.0" mnemonicParsing="false" onAction="#list_all_students_checked_in_listener" text="N-list-all-students-checked-in" />
+            <Button fx:id="list_all_students_checked_in_before" layoutX="19.0" layoutY="717.0" mnemonicParsing="false" onAction="#list_all_students_checked_in_before_listener" text="O-list-all-students-checked-in-before" />
+            <Button fx:id="list_students_attendance_count" layoutX="23.0" layoutY="754.0" mnemonicParsing="false" onAction="#list_students_attendance_count_listener" text="P-list-students-attendance-count" />
+            <Button fx:id="print_query_list" layoutX="56.0" layoutY="792.0" mnemonicParsing="false" onAction="#print_query_list_listener" text="R-print-query-list" />
+            <Button fx:id="print_count" layoutX="73.0" layoutY="832.0" mnemonicParsing="false" onAction="#print_count_listener" text="S-print-count" />
+            <Button fx:id="exit" layoutX="598.0" layoutY="792.0" mnemonicParsing="false" onAction="#exit_listener" text="Exit" />
+            <Text fx:id="name" layoutX="648.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: Pranav Civi" />
+            <Text fx:id="uin" layoutX="653.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UIN: 431005071" />
+            <Text fx:id="email" layoutX="615.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email: pranav.civi.1@tamu.edu" />
+            <Button fx:id="loadRosterFile" layoutX="264.0" layoutY="67.0" mnemonicParsing="false" onAction="#rosterFile_listener" text="Load Roster File" />
+            <Button fx:id="loadSwipeFile" layoutX="266.0" layoutY="218.0" mnemonicParsing="false" onAction="#swipeFile_listener" text="Load Swipe File" />
+            <Text fx:id="rosterFileText" layoutX="371.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="154.13671875" />
+            <Text fx:id="swipeFileText" layoutX="397.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="71.13671875" />
+            <Button fx:id="go" layoutX="299.0" layoutY="325.0" mnemonicParsing="false" onAction="#go_listener" text="Go" />
+            <TextField fx:id="Hbox" layoutX="229.0" layoutY="385.0" prefHeight="25.0" prefWidth="154.0" promptText="lastname space firstname" />
+            <TextField fx:id="Ibox" layoutX="192.0" layoutY="489.0" prefHeight="25.0" prefWidth="108.0" promptText="enter time" />
+            <TextField fx:id="Kbox" layoutX="204.0" layoutY="535.0" promptText="enter date" />
+            <TextField fx:id="Lbox" layoutX="232.0" layoutY="579.0" promptText="lastname space firstname" />
+            <TextField fx:id="Mbox1" layoutX="173.0" layoutY="626.0" prefHeight="25.0" prefWidth="117.0" promptText="firstname lastname" />
+            <TextField fx:id="Mbox2" layoutX="297.0" layoutY="626.0" promptText="enter date" />
+            <TextField fx:id="NBox" layoutX="216.0" layoutY="672.0" promptText="enter date" />
+            <TextField fx:id="Obox1" layoutX="240.0" layoutY="717.0" prefHeight="25.0" prefWidth="89.0" promptText="date" />
+            <TextField fx:id="Obox2" layoutX="341.0" layoutY="717.0" prefHeight="25.0" prefWidth="105.0" promptText="time" />
+            <TextField fx:id="Pbox" layoutX="225.0" layoutY="754.0" prefHeight="25.0" prefWidth="93.0" promptText="enter number" />
+            <Text fx:id="instructions" layoutX="36.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1) Load the Roster File    2) Load the swipe file    3) Click &quot;Go&quot;    4) Then all other buttons can be pressed" wrappingWidth="682.13671875" />
+            <TextField fx:id="latebox" layoutX="309.0" layoutY="489.0" prefHeight="25.0" prefWidth="100.0" promptText="enter date" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
